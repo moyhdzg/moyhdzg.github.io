@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="barraHeader">
+                <div class="logo">
+                    <img class="ucamplogo" src="./ucamp.png" alt="">
+                </div>
+                <div class="titulo">mOe's  1st CRUD</div>
+                <div class="rellenoHeader">Enjoy!</div>
+        </header>
+        <hr size="2px" color="gray" width="80%"/>
+        <div class="jumbotron">
+            <h1>CRUD</h1>
+            <pr> Proyecto No.2 del Fullstack</pr>
+            <pr>development bootcamp</pr>
+            <pr>Creacion de un modelo CRUD para</pr>
+            <pr>Agregar (Create), Leer (Read), Actualizar(Update) o Eliminar (Delete)</pr>
+            <pr>tareas o items en una webpage</pr>
+            <h3>***Disclaimer: Este CRUD está creado usando el código del ejercicio "AGENDA" del Coach Raul Gonzalez***</h3>
+        </div>
+        <div class="mainWorkspace">
+                <input type='hidden' id="idTask">
+                <div class="taskLabel">Tarea / Task</div>
+                <input class="taskN" id="taskName" />
+                <div class="descLabel">Descripcion / Description</div>
+                <input class="taskD" id="taskDesc" />
+        </div>
+        <div class="buttonArea">
+            <button id="add" onclick="add()">Add</button>
+            <button id="update" onclick="update()">Update</button>
+        </div>
+        <hr size="2px" color="Black" width="70%"/>
+        <table>
+            <thead class="tableTitle">
+                <tr>
+                    <th scope="col" class="tableTitle1" >Elemento / Item</th>
+                    <th scope="col" class="tableTitle2">Tarea / task</th>
+                    <th scope="col" class="tableTitle3">Descripcion / Description</th>
+                    <th scope="col" class="editDelete"></th>
+                </tr>
+            </thead>
+            <tbody id="tableContent">
+                
+            </tbody>
+        </table>
+        <hr size="2px" color="Black" width="70%"/>
+        <hr size="2px" color="gray" width="80%"/>
+        <footer class="pie">
+            <ul class="listas producto">
+                <li>CRUD</li>
+                <li><hr size="2px" color="gray" width="100%" /></li>
+                <li>Proyecto CRUD</li>
+            </ul>
+            <ul class="listas soporte">
+                <li>SOPORTE</li>
+                <li><hr size="2px" color="gray" width="100%" /></li>
+                <li>Precios y cotizaciones</li>
+                <li>Certificaciones</li>
+                <li>Guías</li>
+            </ul>
+            <ul class="listas about">
+                <li>NOSOTROS</li>
+                <li><hr size="2px" color="gray" width="100%" /></li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Trabajos</li>
+                <li>Prensa</li>
+                <li>Partners</li>
+            </ul>
+            <ul class="listas legal">
+                <li>LEGAL</li>
+                <li><hr size="2px" color="gray" width="100%" /></li>
+                <li>Privacidad</li>
+                <li>Términos</li>
+            </ul>
+            <div class="listas redes">
+                <img class="ucamplogo" src="./ucamp.png" alt="">
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./task.js" type="text/javascript"> </script>
+    <script src="./storage.js" type="text/javascript"> </script>
+    <script src="./index.js" type="text/javascript"> </script>
+    
+</body>
+</html>
